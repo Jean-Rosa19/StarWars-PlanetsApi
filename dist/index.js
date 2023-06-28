@@ -1,0 +1,14 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const PlanetRoutes_1 = __importDefault(require("./src/routes/PlanetRoutes"));
+const app = (0, express_1.default)();
+app.use(express_1.default.json());
+const PORT = 3000;
+app.use('/', PlanetRoutes_1.default);
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+});
