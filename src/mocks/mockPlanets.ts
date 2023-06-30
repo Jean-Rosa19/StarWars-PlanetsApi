@@ -2,18 +2,18 @@ import Planet from "../Domains/Planet";
 import { IPlanet } from "../Interfaces/Iplanet";
 
 export const bodyRequisition: IPlanet = {
-    name: "Tatooine",
-    climate: "Arid",
-    terrain: "Desert",
-    relatedFilms: 5,
+  name: "Naboo",
+  climate: "temperate",
+  terrain: "grassy hills, swamps, forests, mountains",
+  relatedFilms: 0
 }
 
 export const expectedReturn: Planet = new Planet({
-    id: "649addd9e776ac426ca882f5",
-    name: "Tatooine",
-    climate: "Arid",
-    terrain: "Desert",
-    relatedFilms: 5
+  id: "649ae0845617f93c697da3d3",
+  name: "Naboo",
+  climate: "temperate",
+  terrain: "grassy hills, swamps, forests, mountains",
+  relatedFilms: 0
 })
 
 export const planetsArray: IPlanet[] =[

@@ -11,7 +11,7 @@ class PlanetODM {
       name: { type: String, required: true },
       climate: { type: String, required: true },
       terrain: { type: String, required: true },
-      relatedFilms: { type: Number },
+      relatedFilms: { type: Number, default: 0 },
     });
     this.model = models.planets || model('planets', this.schemma);
   }
